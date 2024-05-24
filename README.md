@@ -9,6 +9,10 @@ Framework web: Django
 Base de datos: MySQL
 Libreria: Bootstrap
 
+Ejemplo:
+user: manager
+password: coder123
+
 Caso de Uso 1: Registro de un nuevo usuario
 - Registro de un nuevo usuario
 Actor:
