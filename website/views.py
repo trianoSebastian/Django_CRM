@@ -8,7 +8,6 @@ from .models import Record
 
 def home(request):
 	records=Record.objects.all()
-    # el POST tiene que estar escrito en mayúsculas, sino no funciona!
 	if request.method=='POST':
 		username=request.POST['username']
 		password=request.POST['password']
@@ -23,8 +22,6 @@ def home(request):
 	else:
 		return render(request,'home.html',{'records':records})
 
-# def login_user(request):
-# 	return render(request,'home.html',{})
 
 def logout_user(request):
 	logout(request)
